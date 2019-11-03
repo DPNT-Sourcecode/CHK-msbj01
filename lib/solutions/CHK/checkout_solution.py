@@ -12,8 +12,8 @@ def checkout(skus):
         'C': 20,
         'D': 15
     }
-    dict_discount_quantity = { 'A': 3, 'B': 2 }
-    dict_discount_price = {'A': 130, 'B': 45 }
+    dict_discount_quantity = {'A': 3, 'B': 2}
+    dict_discount_price = {'A': 130, 'B': 45}
 
     lst_cart = skus.split(',')
     for elem in lst_cart:
@@ -25,4 +25,14 @@ def checkout(skus):
         if extract_str in dict_discount_quantity:
             discount_price = (cnt_product / dict_discount_quantity[extract_str]) * dict_discount_price[extract_str]
             no_discount_price = (cnt_product % dict_discount_quantity[extract_str]) * dict_discount_price[extract_str]
+            final_price = discount_price + no_discount_price
+        else:
+            final_price = cnt_product * dict_products[extract_str]
+
+        price += final_price
+
+    print (price)
+
+
+checkout('50A,30B,40C')
 
