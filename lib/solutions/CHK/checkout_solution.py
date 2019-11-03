@@ -23,7 +23,7 @@ def checkout(skus):
         extract_str = elem.replace(extract_num[0],'')
 
         if extract_str in dict_discount_quantity:
-            x = cnt_product / dict_discount_quantity[extract_str]
+            x = int(cnt_product / dict_discount_quantity[extract_str])
             discount_price =  x * dict_discount_price[extract_str]
             no_discount_price = (cnt_product % dict_discount_quantity[extract_str]) * dict_products[extract_str]
             final_price = discount_price + no_discount_price
@@ -32,7 +32,4 @@ def checkout(skus):
 
         price += int(final_price)
 
-    print (price)
-
-
-checkout('50A,30B,40C')
+    return price
