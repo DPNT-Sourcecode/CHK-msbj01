@@ -15,7 +15,7 @@ def checkout(skus):
         }
         dict_discount_quantity = {'A': 3, 'B': 2}
         dict_discount_price = {'A': 130, 'B': 45}
-        print (skus)
+
         lst_cart = skus.split(',')
         for elem in lst_cart:
             final_price = 0
@@ -36,4 +36,5 @@ def checkout(skus):
         price = str(e)
 
     return price
+
 
