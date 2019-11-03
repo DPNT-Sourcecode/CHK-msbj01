@@ -14,5 +14,3 @@ def checkout(skus):
     }
     dict_discount_quantity = { 'A': 3, 'B': 2 }
     dict_discount_price = {'A': 130, 'B': 45 }
-
-
