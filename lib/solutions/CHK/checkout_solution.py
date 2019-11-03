@@ -35,5 +35,3 @@ def checkout(skus):
 
 
 checkout('50A,30B,40C')
-
-
