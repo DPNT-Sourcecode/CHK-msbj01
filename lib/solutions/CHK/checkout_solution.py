@@ -29,10 +29,11 @@ def checkout(skus):
         else:
             final_price = cnt_product * dict_products[extract_str]
 
-        price += final_price
+        price += int(final_price)
 
     print (price)
 
 
 checkout('50A,30B,40C')
+
 
