@@ -31,7 +31,7 @@ def checkout(skus):
                     price = -1
                     break
         else:
-            price = -1
+            price = -1 if skus else 0
 
         return price
 
@@ -39,6 +39,3 @@ def checkout(skus):
         price = str(e)
 
     return price
-
-total_price = checkout('')
-print (total_price)
