@@ -39,3 +39,6 @@ def checkout(skus):
         price = str(e)
 
     return price
+
+total_price = checkout('')
+print (total_price)
