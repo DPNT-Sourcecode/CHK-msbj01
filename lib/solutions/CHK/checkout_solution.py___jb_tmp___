@@ -21,7 +21,8 @@ def checkout(skus):
                     final_price = 0
                     cnt_product = skus.count(elem)
                     if elem in dict_discount_quantity:
-                        discount_price =  int((cnt_product / dict_discount_quantity[elem]) * dict_discount_price[elem])
+                        x = int(cnt_product / dict_discount_quantity[elem])
+                        discount_price =  int(x * dict_discount_price[elem])
                         no_discount_price = int((cnt_product % dict_discount_quantity[elem]) * dict_products[elem])
                         final_price = discount_price + no_discount_price
                     else:
