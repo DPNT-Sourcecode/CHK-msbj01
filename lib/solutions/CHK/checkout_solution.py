@@ -39,6 +39,3 @@ def checkout(skus):
         price = str(e)
 
     return price
-
-total_price = checkout('AAAAAAAAAABBBBBCCCDDDD')
-print (total_price)
