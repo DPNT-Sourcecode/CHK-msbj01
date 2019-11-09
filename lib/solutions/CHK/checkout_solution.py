@@ -37,6 +37,7 @@ def checkout(skus):
                                             cnt_product-=x
                                     else:
                                         break
+                            print cnt_product, val[0], val[1], tmp_price
                             tmp_price = int((cnt_product / val[0]) * val[1])
                             cnt_product = cnt_product % val[0]
                             discount_price +=tmp_price
@@ -63,5 +64,6 @@ def checkout(skus):
 cart = 'AAAAAAAABBBCCCDDDDEEEEE'
 total_price = checkout(cart)
 print (total_price)
+
 
 
