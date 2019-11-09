@@ -59,3 +59,8 @@ def checkout(skus):
 
     return price
 
+
+mycart = 'AAAAAAAABBBCCCDDDDEEEEEFFFFF'
+totalprice = checkout(mycart)
+print (totalprice)
+
