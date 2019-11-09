@@ -14,7 +14,8 @@ def checkout(skus):
                 'B': 30,
                 'C': 20,
                 'D': 15,
-                'E': 40
+                'E': 40,
+                'F': 10
             }
             dict_discount_quantity = {'A': [(5,200), (3,130)], 'B': [(2, 45)]}
             special_discount = {'B': [(2,'E')], 'F': [(2, 'F')]}
@@ -57,3 +58,4 @@ def checkout(skus):
         price = str(e)
 
     return price
+
