@@ -64,7 +64,3 @@ def checkout(skus):
 cart = 'AAAAAAAABBBCCCDDDDEEEEE'
 total_price = checkout(cart)
 print (total_price)
-
-
-
-
