@@ -37,10 +37,9 @@ def checkout(skus):
                                             cnt_product-=x
                                     else:
                                         break
-                            print (cnt_product, val[0], val[1], tmp_price)
-                            tmp_price = int((cnt_product / val[0]) * val[1])
+                            tmp_price = int(int(cnt_product / val[0]) * val[1])
                             cnt_product = cnt_product % val[0]
-                            discount_price +=tmp_price
+                            discount_price += tmp_price
                             no_discount_price = int(cnt_product * dict_products[elem])
                         final_price = discount_price + no_discount_price
                     else:
@@ -58,9 +57,3 @@ def checkout(skus):
         price = str(e)
 
     return price
-
-
-
-cart = 'AAAAAAAABBBCCCDDDDEEEEE'
-total_price = checkout(cart)
-print (total_price)
