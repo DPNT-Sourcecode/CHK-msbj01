@@ -60,6 +60,6 @@ def checkout(skus):
     return price
 
 
-mycart = 'AAAAAAAABBBCCCDDDDEEEEEFFFFF'
+mycart = 'AAAAAAAABBBCCCDDDDEEEEEFFFFFF'
 totalprice = checkout(mycart)
 print (totalprice)
