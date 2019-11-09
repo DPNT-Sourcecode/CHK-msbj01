@@ -2,6 +2,9 @@
 # skus = unicode string
 def checkout(skus):
     try:
+        def get_count(product):
+            return skus.count(product)
+
         if skus.isalpha():
             # initializing price variable
             price = 0
@@ -39,3 +42,4 @@ def checkout(skus):
         price = str(e)
 
     return price
+
