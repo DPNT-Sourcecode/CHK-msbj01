@@ -56,7 +56,3 @@ def checkout(skus):
         price = str(e)
 
     return price
-
-
-
-
