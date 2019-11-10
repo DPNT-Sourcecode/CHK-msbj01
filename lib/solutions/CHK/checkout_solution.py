@@ -14,8 +14,9 @@ def checkout(skus):
                 'J': 60, 'K': 80, 'L': 90, 'M': 15, 'N': 40, 'O': 10, 'P': 50, 'Q': 30, 'R': 50,
                 'S': 30, 'T': 20, 'U': 40, 'V': 50, 'W': 20, 'X': 90, 'Y': 10, 'Z': 50
             }
-            dict_discount_quantity = {'A': [(5,200), (3,130)], 'B': [(2, 45)], 'F': [(3,20)]}
-            special_discount = {'B': [(2,'E')]}
+            dict_discount_quantity = {'A': [(5,200), (3,130)], 'B': [(2, 45)], 'F': [(3,20)], 'H': [(5, 45), (10, 80)],
+                                      'K': [(2, 150)], }
+            special_discount = {'B': [(2,'E')], 'M': [(3, 'N')]}
 
             unique_items_cart = ''.join(set(skus))
             for elem in unique_items_cart:
@@ -55,3 +56,4 @@ def checkout(skus):
         price = str(e)
 
     return price
+
