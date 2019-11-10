@@ -57,15 +57,6 @@ def checkout(skus):
 
     return price
 
-cart = 'AAAAAAAABBBCCCDDDDEEEEEFFFFFGGGGGHHHHHHHHHHHHIIIJJJJKKKKKLLLMMMMMMNNNNNOOOOPPPPPQQQQRRRRRSSSTTTTUUUUUVVVVVWWWWWXXXXXYYYYYZZZZZ'
-#cart = 'MMMMMMNNNNN'
-prc = checkout(cart)
-print(prc)
-
-# {"method":"checkout","params":["NNNM"],"id":"CHK_R4_106"}, expected: 120, got: 135
-#  {"method":"checkout","params":["NNNNM"],"id":"CHK_R4_107"}, expected: 160, got: 175
-#  {"method":"checkout","params":["NNNNNNMM"],"id":"CHK_R4_108"}, expected: 240, got: 270
-
 
 
 
