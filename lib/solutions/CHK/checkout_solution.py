@@ -15,7 +15,7 @@ def checkout(skus):
                 'S': 30, 'T': 20, 'U': 40, 'V': 50, 'W': 20, 'X': 90, 'Y': 10, 'Z': 50
             }
             dict_discount_quantity = {'A': [(5,200), (3,130)], 'B': [(2, 45)], 'F': [(3,20)], 'H': [(10, 80), (5, 45)],
-                                      'K': [(2, 150)], 'P': [(5, 200)], 'Q': [(3, 80)], 'U': [(4, 120)], 'V': [(3, 130), (2, 90)]}
+                                      'K': [(2, 150)], 'M': [(1, 15)], 'P': [(5, 200)], 'Q': [(3, 80)], 'U': [(4, 120)], 'V': [(3, 130), (2, 90)]}
             special_discount = {'B': [(2,'E')], 'M': [(3, 'N')], 'Q': [(3, 'R')]}
 
             unique_items_cart = ''.join(set(skus))
@@ -58,13 +58,14 @@ def checkout(skus):
     return price
 
 cart = 'AAAAAAAABBBCCCDDDDEEEEEFFFFFGGGGGHHHHHHHHHHHHIIIJJJJKKKKKLLLMMMMMMNNNNNOOOOPPPPPQQQQRRRRRSSSTTTTUUUUUVVVVVWWWWWXXXXXYYYYYZZZZZ'
-#cart = 'ZZZZZ'
+#cart = 'MMMMMMNNNNN'
 prc = checkout(cart)
 print(prc)
 
 # {"method":"checkout","params":["NNNM"],"id":"CHK_R4_106"}, expected: 120, got: 135
 #  {"method":"checkout","params":["NNNNM"],"id":"CHK_R4_107"}, expected: 160, got: 175
 #  {"method":"checkout","params":["NNNNNNMM"],"id":"CHK_R4_108"}, expected: 240, got: 270
+
 
 
 
