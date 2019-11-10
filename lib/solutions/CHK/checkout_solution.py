@@ -17,8 +17,8 @@ def checkout(skus):
                 'E': 40,
                 'F': 10
             }
-            dict_discount_quantity = {'A': [(5,200), (3,130)], 'B': [(2, 45)], 'F': [(1,10)]}
-            special_discount = {'B': [(2,'E')], 'F': [(2, 'F')]}
+            dict_discount_quantity = {'A': [(5,200), (3,130)], 'B': [(2, 45)], 'F': [(3,20)]}
+            special_discount = {'B': [(2,'E')]}
 
             unique_items_cart = ''.join(set(skus))
             for elem in unique_items_cart:
@@ -58,8 +58,3 @@ def checkout(skus):
         price = str(e)
 
     return price
-
-
-mycart = 'AAAAAAAABBBCCCDDDDEEEEEFFFFFF'
-totalprice = checkout(mycart)
-print (totalprice)
